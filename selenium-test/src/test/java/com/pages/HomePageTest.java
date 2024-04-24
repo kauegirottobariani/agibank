@@ -1,22 +1,31 @@
 package com.pages;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import utils.SetupBrowser;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import utils.ReturnHome;
 
 import java.io.IOException;
 
 public class HomePageTest {
     private WebDriver driver;
     private HomePage homePage;
+    private ReturnHome returnHome;
 
     @BeforeClass
     public void setUp() throws IOException {
         driver = SetupBrowser.setUp();
         homePage = new HomePage(driver);
+        returnHome = new ReturnHome(driver);
+    }
+
+    @AfterMethod
+    public void tearDownMethod() {
+        returnHome.clickCustomLogo();
     }
 
     @Test
@@ -36,7 +45,7 @@ public class HomePageTest {
     }
 
     @AfterClass
-    public void tearDown() {
+    public void tearDownClass() {
         driver.quit();
     }
 }
