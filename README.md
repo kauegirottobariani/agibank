@@ -50,6 +50,15 @@ Link para download do JDK - https://www.oracle.com/java/technologies/downloads/#
 2. Abra o terminal e navegue até o diretório do projeto.
 3. Execute o comando `mvn clean install` para baixar e instalar as dependências do projeto.
 
+## Setar o browser e URl que deseja
+
+No arquivo config.properties dentro da pasta ENV insira a URL e o browser que deseja.
+
+EX: 
+
+url=https://blogdoagi.com.br/
+browser=firefox
+
 ## Executar os Testes
 
 Para rodar os testes no Google Chrome, é necessário ter a versão 11 ou inferior instalada.
