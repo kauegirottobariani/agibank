@@ -56,8 +56,8 @@ No arquivo config.properties dentro da pasta ENV insira a URL e o browser que de
 
 EX: 
 
-url=https://blogdoagi.com.br/
-browser=firefox
+1. url=https://blogdoagi.com.br/
+2. browser=firefox
 
 ## Executar os Testes
 
