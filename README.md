@@ -10,7 +10,9 @@ Utilizar a branch master
 
 Link para download do JDK - https://www.oracle.com/java/technologies/downloads/#java11
 
-### Instalando o Homebrew no Linux e Windows
+## Instalando o Homebrew 
+
+### Linux e Windows
 
 1. Usando o Windows Subsystem for Linux (WSL):
 Siga as instruções para instalar o WSL e, em seguida, instale o Homebrew dentro do WSL como no macOS.
